@@ -9,3 +9,38 @@
   padding: 20px;
   margin: 0 auto;
 }
+.user-input {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    color: #8899a6;
+    margin: 10px;
+    text-align: left;
+  }
+
+  input {
+    background: none;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #8899a6;
+    margin: 5px;
+  }
+}
+
+.function-btn {
+  border: 1px solid $primary-color;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.login {
+  @extend .function-btn;
+  @include button($primary-color, none);
+}
+
+.register {
+  @extend .function-btn;
+  @include button($white, $primary-color);
+}

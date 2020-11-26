@@ -2,3 +2,8 @@
   margin-top: 0;
   font-size: $font-size;
 }
+
+@mixin button($color, $back-color) {
+  color: $color;
+  background-color: $back-color;
+}
