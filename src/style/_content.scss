@@ -5,7 +5,7 @@
 
 .pop-up {
   width: 400px;
-  border: 1px solid gray;
+  border: 1px solid $gray;
   padding: 20px;
   margin: 0 auto;
 }
@@ -14,7 +14,7 @@
   flex-direction: column;
 
   label {
-    color: #8899a6;
+    color: $gray;
     margin: 10px;
     text-align: left;
   }
@@ -23,15 +23,26 @@
     background: none;
     outline: none;
     border: 0;
-    border-bottom: 1px solid #8899a6;
+    border-bottom: 1px solid $gray;
     margin: 5px;
+  }
+}
+
+.user-function {
+  > p {
+    text-align: left;
+  }
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
   }
 }
 
 .function-btn {
   border: 1px solid $primary-color;
-  border-radius: 10px;
-  padding: 5px;
+  border-radius: 15px;
+  padding: 5px 10px;
   margin: 5px;
 }
 
